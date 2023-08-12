@@ -9,6 +9,7 @@ export const Input = ({label,id,type,placeholder,value,setValue}) =>{
             name={id}
             id={id}
             value={value}
+            required
             onChange={(event) => setValue(event.target.value)}           
             />
         </div>

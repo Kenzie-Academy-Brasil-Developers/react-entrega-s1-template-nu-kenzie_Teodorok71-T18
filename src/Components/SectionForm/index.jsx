@@ -10,6 +10,7 @@ export const Form = ({addNote}) =>{
     const [select, setSelect] = useState("Entrada")
 
     const submit = (event) =>{
+
         event.preventDefault()
 
         addNote({descripition,value,select})

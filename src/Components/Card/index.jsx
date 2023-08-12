@@ -4,7 +4,7 @@ export const Card = ({descripition, value, select,removeNote,id}) =>{
             <p>{descripition}</p>
             <span>R$ {value}</span>
             <p>{select}</p>
-            <button onClick={() =>removeNote(id)}>Excluir</button>
+            <button onClick={() => removeNote(id,select,value)}>Remover</button>
         </li>
     )
 }

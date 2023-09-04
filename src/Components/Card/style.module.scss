@@ -1,0 +1,23 @@
+.li{
+    width: 560px;
+    height: 87px;
+    padding-left: 0.5rem;
+    
+
+    margin-top: 3rem;
+    border-radius: 4px;
+    background: var(--grey-1, #F8F9FA);
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.entryBorder {
+    border-left: 4px solid var(--color-secundary);
+}
+
+.exitBorder {
+    border-left: 4px solid var(--grey-2);
+}

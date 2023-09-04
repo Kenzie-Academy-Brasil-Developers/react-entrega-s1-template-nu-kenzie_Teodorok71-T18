@@ -1,0 +1,28 @@
+.main{
+   padding-left: 18rem;
+}
+.div{
+    display: flex;
+    gap: 5rem;
+
+    margin-top: 4rem;
+}
+.totalValue{
+    width: 355px;
+    height: 96px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    margin-top: 2rem;
+
+    border-radius: 4px;
+    border: 1px solid var(--grey-2, #E9ECEF);
+    background: #FFF;
+
+    span{
+        display: flex;
+        gap: 10.5rem;
+    }
+}

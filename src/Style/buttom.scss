@@ -1,0 +1,30 @@
+.buttom{
+    width: 314px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+}
+
+.buttomRemove{
+    width:69px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: var(--font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 2px;
+    border: none;
+    background: var(--grey-2);
+}

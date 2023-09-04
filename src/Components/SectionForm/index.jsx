@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Input } from "../Input"
 import { Select } from "../Selec"
+import styles from "./style.module.scss"
 
 
 
@@ -21,16 +22,16 @@ export const Form = ({addNote}) =>{
 
 
     return(
-        <form onSubmit={submit}>
+        <form className={styles.form} onSubmit={submit}>
+            <div className={styles.div}>
             <Input
             label= "Descrição"
             placeholder="Digite aqui sua descrição"
             type="text"
             id="description"
             value={descripition}
-            setValue={setDescription}           
+            setValue={setDescription}       
             />
-
             <Input
             label= "Valor (R$)"
             placeholder="1"
@@ -39,7 +40,6 @@ export const Form = ({addNote}) =>{
             value={value}
             setValue={setValue}           
             />
-
             <Select label="Tipo de valor" id="select" value={select} setValue={setSelect}>
             <option value="Entrada">Entrada</option>
             <option value="Despesa">Despesa</option>
@@ -48,7 +48,8 @@ export const Form = ({addNote}) =>{
            
 
            
-            <button type="submit">Inserir Valor</button>
+            <button className="buttom" type="submit">Inserir Valor</button>
+            </div>
         </form>
     )
 }
